@@ -1,0 +1,17 @@
+dn: cn=ageticperson,cn=schema,cn=config
+objectClass: olcSchemaConfig
+cn: ageticperson
+olcObjectIdentifier: {0} AGETIC 1.2.3
+olcObjectIdentifier: {1} ageticperson AGETIC:1
+olcObjectIdentifier: {2} ageticpersonObjectClass ageticperson:1
+olcObjectIdentifier: {3} ageticpersonAttributeType ageticperson:2
+olcAttributeTypes: {0}( ageticpersonAttributeType:1 NAME 'genero' DESC 'Género de la persona' EQUALITY caseExactMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE )
+olcObjectClasses: {0}(ageticpersonObjectClass:1 NAME 'ageticpersonInfo' DESC 'Información del personal de la AGETIC' AUXILIARY MAY (genero))
+
+structuralObjectClass:
+entryUUID:
+creatorsName:
+createTimestamp:
+entryCSN:
+modifiersName:
+modifyTimestamp:

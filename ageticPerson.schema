@@ -1,0 +1,15 @@
+objectidentifier ageticPersonSchema 1.3.6.1.4.1.X.Y
+objectidentifier ageticPersonAttrs ageticPersonSchema:3
+objectidentifier ageticPersonOCs ageticPersonSchema:4
+
+attributetype ( ageticPersonAttrs:1
+          NAME 'genero'
+          DESC 'Género de la persona'
+          EQUALITY caseIgnoreMatch
+          SUBSTR caseIgnoreSubstringsMatch
+          SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{32} )
+objectClass ( ageticPersonOCs:1
+        NAME 'ageticPerson'
+        DESC 'Describe a personas'
+        SUP ( top ) AUXILIARY
+        MUST ( genero) )
